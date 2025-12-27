@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page-body">
+  <!-- пример использования спрайта -->
+  <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg>
+  <!-- примеры требуемых атрибутов data-test="*" -->
+
+  <section class="hero" data-test="hero">
+    <div class="header">
+      <div class="header-logo">
+        <a href="#" class="header-logo-link"></a>
+      </div>
+      <div class="header-menu">
+        <ol>
+          <li>О проекте</li>
+          <li> Программы
+            <ol>
+              <li>Стажировки</li>
+              <li>Волонтёрство</li>
+              <li>Учёба</li>
+              <li>Религия</li>
+            </ol>
+          </li>
+          <li>как поехать</li>
+          <li>отзывы</li>
+          <li>новости
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li>контакты</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section class="about" data-test="about">about</section>
+  <section class="programs" data-test="programs">programs</section>
+  <section class="grant" data-test="grant">grant</section>
+  <section class="news" data-test="news">news</section>
+  <section class="faq" data-test="FAQ">FAQ</section>
+  <section class="reviews" data-test="reviews">reviews</section>
+  <section class="contacts" data-test="contacts">contacts</section>
+  <section class="form" data-test="form">form</section>
+  <section class="footer" data-test="footer">footer</section>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
