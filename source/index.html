@@ -10,10 +10,10 @@
 
 <body class="page-body">
   <!-- пример использования спрайта -->
-  <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
+  <!-- <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
   <svg>
     <use href="/__spritemap#sprite-user"></use>
-  </svg>
+  </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
 
   <section class="hero" data-test="hero">
@@ -45,7 +45,49 @@
       </div>
     </div>
   </section>
-  <section class="about" data-test="about">about</section>
+  <section class="about" data-test="about">
+
+    <div class="swiper">
+
+      <!-- Кнопки навигации -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- Пагинация -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('');"></div>
+          <div class="slide-content">
+            <h2>Глобальный профессиональный опыт обучения за рубежом</h2>
+            <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий
+              стиль жизни!</p>
+            <button>подробнее</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('');"></div>
+          <div class="slide-content">
+            <h2>Волонтёрские программы –
+              внесите свой вклад в общество</h2>
+            <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+            <button>подробнее</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('');"></div>
+          <div class="slide-content">
+            <h2>Программы стажировок
+              в крупнейших компаниях мира</h2>
+            <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+            <button>подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <section class="programs" data-test="programs">programs</section>
   <section class="grant" data-test="grant">grant</section>
   <section class="news" data-test="news">news</section>
