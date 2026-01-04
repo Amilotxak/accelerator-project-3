@@ -1,0 +1,19 @@
+@mixin wrapper {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin button {
+  border: none;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: currentColor;
+}
