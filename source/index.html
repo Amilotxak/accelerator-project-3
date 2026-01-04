@@ -5,21 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship</title>
+
+  <link rel="preload" href="./fonts/manrope-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/manrope-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page-body">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
-  <svg>
+  <!-- пример использования спрайта  -->
+  <!-- <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт"> -->
+  <!-- <svg>
     <use href="/__spritemap#sprite-user"></use>
   </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
 
   <section class="hero" data-test="hero">
     <div class="header">
       <div class="header-logo">
-        <a href="#" class="header-logo-link"></a>
+        <a href="#" class="header-logo-link">
+          <img src="/__spritemap#sprite-logo-view" width="30" height="30" alt="логотип">
+        </a>
       </div>
       <div class="header-menu">
         <ol>
@@ -174,12 +180,14 @@
     <div>
       <h3>Кто организатор? Какие сроки у программы?</h3>
       <button>показать больше</button>
-      <p></p>
+      <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки
+        программы обмена могут варьироваться от одного семестра до года.</p>
     </div>
     <div>
       <h3>Что такое грант на обучение?</h3>
       <button>показать больше</button>
-      <p></p>
+      <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для
+        оплаты учебных расходов.</p>
     </div>
     <div>
       <h3>Как определяется стоимость программы?</h3>
@@ -191,12 +199,17 @@
     <div>
       <h3>Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
       <button>показать больше</button>
-      <p></p>
+      <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной
+        деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи
+        предоставляют кредиты за участие в программе обмена студентами.</p>
     </div>
     <div>
       <h3>Как выглядит полный процесс регистрации на программу «Стажировка»?</h3>
       <button>показать больше</button>
-      <p></p>
+      <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с
+        координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью,
+        оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в
+        программе. Подробнее можно узнать позвонив в центр.</p>
     </div>
   </section>
   <section class="reviews" data-test="reviews">
@@ -244,11 +257,67 @@
     </div>
   </section>
   <section class="form" data-test="form">
-    <form action="">
-      
+    <form class="" action="https://echo.htmlacademy.ru/">
+      <h2>Напишите нам</h2>
+      <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+      <fieldset class="">
+        <span>Имя</span>
+        <input type="text">
+      </fieldset>
+
+      <fieldset class="">
+        <span>Телефон</span>
+        <input type="text">
+      </fieldset>
+
+      <fieldset class="">
+        <span>Ваше сообщение</span>
+        <textarea class="form__fieldset-textarea" id="message" cols="30" rows="10" name="comment-owner"></textarea>
+      </fieldset>
+
+      <fieldset class="">
+        <span>Выберите город</span>
+        <input type="text">
+      </fieldset>
+
+      <label class="">
+        <input class="visually-hidden" type="checkbox" name="programs-pet" value="Weight loss">
+        <span class="">Я согласен на обработку моих персональных данных</span>
+      </label>
     </form>
   </section>
-  <section class="footer" data-test="footer">footer</section>
+  <section class="footer" data-test="footer">
+    <div>
+      <!-- лого -->
+      <div>
+        <ul>
+          <li>О проекте</li>
+          <li>Программы</li>
+          <li>Как поехать</li>
+          <li>Отзывы</li>
+          <li>Новости</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div>
+        <span>Политика конфиденциальности</span>
+        <span>Стажировка © 2023 Все права защищены</span>
+      </div>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <script type="module" src="js/main.js"></script>
 </body>
 
