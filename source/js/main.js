@@ -4,6 +4,12 @@ import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 
+let navMain = document.querySelector('.header-nav');
+let navToggle = document.querySelector('.header-nav__toggle');
+
+let questinsItem = document.querySelector('.questins-item');
+let questinsButton = document.querySelector('.questins-item-button');
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".swiper", {
@@ -36,4 +42,20 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         },
     });
+});
+
+// меню навигации
+
+navMain.classList.remove('header-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+    navMain.classList.toggle('header-nav--closed');
+    navMain.classList.toggle('header-nav--opened');
+});
+
+// вопросы и ответы 
+
+questinsButton.addEventListener('click', function () {
+    questinsItem.classList.toggle('questins-item--closed');
+    questinsItem.classList.toggle('questins-item--opened');
 });

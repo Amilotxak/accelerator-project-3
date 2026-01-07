@@ -2,6 +2,12 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    color: $basic-white;
+
+    padding: 70px 15px 55px;
+    align-items: flex-start;
+
+    background-color: $more-text2;
 
     @media (max-width: $mobile-width) {
         width: 320px;
@@ -14,4 +20,59 @@
     @media (min-width: $desktop-width) {
         width: 1440px;
     }
+}
+
+.grant-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 15px 0;
+}
+
+.grant-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 30px 0;
+}
+
+.grant-conditions {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 40px 0 30px 0;
+}
+
+.grant-conditions-item {
+    padding: 25px 26px;
+    margin: 0 0 15px 0;
+    border-radius: 16px;
+    border: 1px solid $basic-fon;
+    position: relative;
+}
+
+.grant-conditions-item-number {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 7px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: $accent-fon;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.grant-conditions-item-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }

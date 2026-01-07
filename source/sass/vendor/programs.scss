@@ -15,3 +15,34 @@
         width: 1440px;
     }
 }
+
+.programs-button {
+    width: 169px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: $basic-button;
+    align-items: center;
+    display: flex;
+    padding: 5px 5px 5px 31px;
+    gap: 20px;
+
+    border-radius: 30px;
+    border: 1px solid $basic-button;
+
+    margin: 0 0 40px 0;
+}
+
+.programs-button-span {
+    width: 22px;
+    height: 22px;
+    background-color: #316DC2;
+    border-radius: 44px;
+}
+
+.programs-button-span img {
+    color: #ffffff;
+    margin: 7px;
+}
