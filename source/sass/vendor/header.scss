@@ -1,5 +1,23 @@
 .header {
+    margin: 0 auto;
     display: flex;
+    position: relative;
+
+    @media (max-width: $mobile-width) {
+        width: 290px;
+        justify-content: space-between;
+        z-index: 3;
+        position: absolute;
+        margin: 20px 15px 0 15px;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1440px;
+    }
 }
 
 .header-logo {
@@ -9,21 +27,25 @@
     padding: 11px;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    background: $basic-white;
 }
 
 // ---------------------
 
 .header-nav__toggle {
-    position: absolute;
-    top: 21px;
-    right: 21px;
-    z-index: 2;
-    display: block;
-    width: 24px;
-    height: 24px;
+    width: 136px;
+    height: 54px;
     background-color: $basic-white;
     cursor: pointer;
-    border: none;
+
+    display: flex;
+    padding: 4px 5px 4px 21px;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 30px;
+    border: 1px solid $accent-fon;
 
     &:hover,
     &:active {
@@ -34,8 +56,8 @@
 .header-nav--closed .header-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 0;
+    top: 19px;
+    right: 10px;
     width: 24px;
     height: 2px;
     background-color: #000000;
@@ -57,8 +79,8 @@
     &::after {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 0;
+        top: 26px;
+        right: 10px;
         width: 25px;
         height: 2px;
         background-color: $basic-black;
@@ -128,10 +150,12 @@
 
     @media (max-width: $mobile-width) {
         background-color: $basic-white;
-        width: 322px;
+        width: 290px;
+        padding: 35px 25px;
+        align-items: flex-start;
         position: absolute;
-        left: -21px;
-        top: 8px;
+        left: -151px;
+        top: 4px;
     }
 
     @media (min-width: $tablet-width) {
