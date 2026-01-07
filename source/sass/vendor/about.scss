@@ -45,11 +45,11 @@
 }
 
 .about-button {
+    width: 219px;
     text-align: center;
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
-    letter-spacing: 0.24px;
     text-transform: uppercase;
     color: $basic-button;
     align-items: center;
@@ -72,4 +72,59 @@
 .about-button-span img {
     color: $basic-white;
     margin: 7px;
+}
+
+.about-programs {
+    display: flex;
+    width: 290px;
+    padding: 20px 20px 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: $basic-button;
+}
+
+.about-programs-item {
+    display: flex;
+    padding: 16px 21px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-left: 20px;
+    border-radius: 16px;
+    border: 1px solid $more-text;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.about-programs-item-star {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    background: $basic-button;
+    position: absolute;
+    top: -21px;
+    left: -21px;
+    border-radius: 30px;
+}
+
+.about-programs-item-span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-white;
+    margin: 0 0 15px 0;
+}
+
+.about-programs-item-description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: $more-text;
+    margin: 0;
 }

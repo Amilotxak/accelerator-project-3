@@ -37,3 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+let navMain = document.querySelector('.header-nav');
+let navToggle = document.querySelector('.header-nav__toggle');
+
+navMain.classList.remove('header-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+    navMain.classList.toggle('header-nav--closed');
+    navMain.classList.toggle('header-nav--opened');
+});
