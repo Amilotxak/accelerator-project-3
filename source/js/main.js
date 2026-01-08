@@ -7,10 +7,6 @@ import 'swiper/css';
 let navMain = document.querySelector('.header-nav');
 let navToggle = document.querySelector('.header-nav__toggle');
 
-let questinsItem = document.querySelector('.questins-item');
-let questinsButton = document.querySelector('.questins-item-button');
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".swiper", {
         loop: true, // Зацикливание слайдов
@@ -55,7 +51,34 @@ navToggle.addEventListener('click', function () {
 
 // вопросы и ответы 
 
-questinsButton.addEventListener('click', function () {
-    questinsItem.classList.toggle('questins-item--closed');
-    questinsItem.classList.toggle('questins-item--opened');
+let questinsItem = document.querySelector('.questins-item');
+let questinsButton = document.querySelector('.questins-item-button');
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.questins').addEventListener('click', function(event) {
+    const button = event.target.closest('.questins-item-button');
+    
+    if (button) {
+      const item = button.closest('.questins-item');
+      const willOpen = item.classList.contains('questins-item--closed');
+      
+      // Синхронное управление классами
+      item.classList.toggle('questins-item--closed');
+      item.classList.toggle('questins-item--opened');
+      
+      // Второй класс всегда копирует состояние первого
+      if (willOpen) {
+        item.classList.add('questins-item--open');
+      } else {
+        item.classList.remove('questins-item--open');
+      }
+      
+      // Обновляем иконку
+      const path = button.querySelector('svg path');
+      if (path) {
+        path.setAttribute('d', willOpen ? 'M0 9H18' : 'M9 0V9M9 9V18M9 9H0M9 9H18');
+      }
+    }
+  });
 });
