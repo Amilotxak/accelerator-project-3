@@ -348,56 +348,63 @@
     </div>
   </section>
   <section class="contacts" data-test="contacts">
-    <h2>Контакты</h2>
-    <div>
-      <span>центральный офис</span>
-      <span>г. Новосибирск, ул. Щетинкина 68, культурный центр</span>
+    <h2 class="contacts-heading">Контакты</h2>
+    <div class="contacts-container">
+      <span class="contacts-title">центральный офис</span>
+      <span class="contacts-description">г. Новосибирск, ул. Щетинкина 68, культурный центр</span>
     </div>
-    <div>
-      <span>Телефон</span>
-      <span>+7 963 876 876 76</span>
+    <div class="contacts-container">
+      <span class="contacts-title">Телефон</span>
+      <span class="contacts-description">+7 963 876 876 76</span>
     </div>
-    <div>
-      <span>Email</span>
-      <span>Info@stazh.ru</span>
+    <div class="contacts-container">
+      <span class="contacts-title">Email</span>
+      <span class="contacts-description">Info@stazh.ru</span>
     </div>
-
-    <span>
-      <!-- чёрточка -->
-    </span>
-
-    <div>
-      <!-- map -->
+    <span class="contacts-feature"></span>
+    <div class="contacts-map">
+      <img src="./img/map.png" alt="карта">
     </div>
   </section>
   <section class="form" data-test="form">
-    <form class="" action="https://echo.htmlacademy.ru/">
-      <h2>Напишите нам</h2>
-      <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-      <fieldset class="">
-        <span>Имя</span>
-        <input type="text">
+    <form class="form-wrapper" action="https://echo.htmlacademy.ru/">
+      <h2 class="form-title">Напишите нам</h2>
+      <p class="form-description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+      <fieldset class="form-fieldset">
+        <label for="user_name">Имя</label>
+        <input type="text" id="user_name" name="user_name">
       </fieldset>
 
-      <fieldset class="">
-        <span>Телефон</span>
-        <input type="text">
+      <fieldset class="form-fieldset">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
       </fieldset>
 
-      <fieldset class="">
-        <span>Ваше сообщение</span>
-        <textarea class="form__fieldset-textarea" id="message" cols="30" rows="10" name="comment-owner"></textarea>
+      <fieldset class="form-fieldset">
+        <label for="message">Ваше сообщение</label>
+        <textarea id="message" class="form__fieldset-textarea" cols="30" rows="10" name="message"></textarea>
       </fieldset>
 
-      <fieldset class="">
-        <span>Выберите город</span>
-        <input type="text">
+      <fieldset class="form-fieldset">
+        <label for="city">
+          Выберите город
+        </label>
+        <div class="select-wrapper">
+          <select id="city" name="city">
+            <option value=""></option>
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="ekb">Екатеринбург</option>
+          </select>
+        </div>
       </fieldset>
 
-      <label class="">
-        <input class="visually-hidden" type="checkbox" name="programs-pet" value="Weight loss">
-        <span class="">Я согласен на обработку моих персональных данных</span>
+      <label class="checkbox-label">
+        <input class="" type="checkbox" name="personal-data-agreement" value="accepted" required>
+        <span class="checkbox-custom"></span>
+        <span class="checkbox-text">Я согласен на обработку моих персональных данных</span>
       </label>
+      <button class="form__button-button" type="submit">отправить</button>
     </form>
   </section>
   <section class="footer" data-test="footer">
