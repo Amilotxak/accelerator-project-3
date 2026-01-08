@@ -63,18 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
       const item = button.closest('.questins-item');
       const willOpen = item.classList.contains('questins-item--closed');
       
-      // Синхронное управление классами
+      // управление классами
       item.classList.toggle('questins-item--closed');
       item.classList.toggle('questins-item--opened');
       
-      // Второй класс всегда копирует состояние первого
+      // второй класс копирует состояние первого
       if (willOpen) {
         item.classList.add('questins-item--open');
       } else {
         item.classList.remove('questins-item--open');
       }
-      
-      // Обновляем иконку
+
       const path = button.querySelector('svg path');
       if (path) {
         path.setAttribute('d', willOpen ? 'M0 9H18' : 'M9 0V9M9 9V18M9 9H0M9 9H18');
