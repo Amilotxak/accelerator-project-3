@@ -73,3 +73,25 @@
 .questins-item--opened .questins-item-description {
     display: flex;
 }
+
+.questins-item--opened .questins-item-button {
+    background-color: $basic-white;
+}
+
+.questins-item--opened svg {
+    stroke: $basic-button;
+}
+
+.questins-item--closed svg {
+    stroke: $basic-white;
+}
+
+.questins-item--open {
+    background-color: $basic-button;
+    color: $basic-white;
+}
+
+.questins-item--open .questins-item-title {
+    background-color: $basic-button;
+    color: $basic-white;
+}
