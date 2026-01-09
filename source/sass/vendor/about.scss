@@ -1,4 +1,8 @@
 .about {
+    @include basic-fon;
+}
+
+.about-wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -18,12 +22,52 @@
     }
 }
 
+.about-wrapper-title {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+}
+
+.about-container {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        width: 702px;
+    }
+}
+
+.about-container2 {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        width: 498px;
+    }
+}
+
 .about-title {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     color: $more-text2;
     margin: 0 0 15px 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 50px;
+    }
 }
 
 .about-description {
@@ -31,6 +75,16 @@
     font-weight: 400;
     line-height: 22px;
     margin: 0 0 40px 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 22px;
+        line-height: 32px;
+    }
 }
 
 .about-title2 {
@@ -39,6 +93,16 @@
     line-height: 22px;
     color: $more-text2;
     margin: 0 0 20px 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 32px;
+        line-height: 36px;
+    }
 }
 
 .about-description2 {
@@ -46,10 +110,19 @@
     font-weight: 400;
     line-height: 20px;
     margin: 0 0 30px 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 .about-button {
-    width: 219px;
     text-align: center;
     font-size: 12px;
     font-weight: 500;
@@ -66,6 +139,13 @@
     border: 1px solid $basic-button;
 
     margin: 0 0 40px 0;
+
+    @media (min-width: $tablet-width) {
+        padding: 5px 5px 5px 31px;
+        font-size: 14px;
+        line-height: 14px;
+        gap: 30px;
+    }
 }
 
 .about-button-span {
@@ -82,13 +162,23 @@
 
 .about-programs {
     display: flex;
-    width: 290px;
     padding: 20px 20px 20px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     background: $basic-button;
+
+    @media (min-width: $tablet-width) {
+        padding: 50px;
+        gap: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 50px 100px;
+    }
 }
 
 .about-programs-item {
@@ -102,6 +192,14 @@
     border: 1px solid $more-text;
     margin-bottom: 22px;
     position: relative;
+
+    @media (min-width: $desktop-width) {
+        padding: 41px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+    }
 }
 
 .about-programs-item-star {
@@ -125,6 +223,17 @@
     text-transform: uppercase;
     color: $basic-white;
     margin: 0 0 15px 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 201px;
+        font-size: 26px;
+        line-height: 30px;
+    }
 }
 
 .about-programs-item-description {
@@ -133,4 +242,12 @@
     line-height: 20px;
     color: $more-text;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 201px;
+    }
 }

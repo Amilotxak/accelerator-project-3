@@ -17,3 +17,22 @@
   text-decoration: none;
   color: currentColor;
 }
+
+@mixin basic-fon {
+  background-color: $basic-fon;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}

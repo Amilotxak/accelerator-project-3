@@ -1,4 +1,8 @@
 .programs {
+    @include basic-fon;
+}
+
+.programs-wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -17,7 +21,6 @@
 }
 
 .programs-button {
-    width: 169px;
     text-align: center;
     font-size: 12px;
     font-weight: 500;
@@ -25,14 +28,22 @@
     text-transform: uppercase;
     color: $basic-button;
     align-items: center;
+
     display: flex;
-    padding: 5px 5px 5px 31px;
+    padding: 5px 5px 5px 21px;
     gap: 20px;
 
     border-radius: 30px;
     border: 1px solid $basic-button;
 
     margin: 0 0 40px 0;
+
+    @media (min-width: $tablet-width) {
+        padding: 5px 5px 5px 31px;
+        font-size: 14px;
+        line-height: 14px;
+        gap: 30px;
+    }
 }
 
 .programs-button-span {
