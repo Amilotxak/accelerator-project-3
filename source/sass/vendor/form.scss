@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $basic-white;
+    background-color: $basic-fon;
 
     @media (max-width: $mobile-width) {
         width: 320px;
@@ -92,4 +93,21 @@
 
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.form-button {
+    display: flex;
+    width: 260px;
+    padding: 5px 5px 5px 31px;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #316DC2;
+    border-radius: 30px;
+    border: 1px solid #316DC2;
+    margin: 0 0 40px 0;
 }

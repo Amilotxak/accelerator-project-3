@@ -1,4 +1,8 @@
 .grant {
+    @include basic-fon;
+}
+
+.grant-wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;

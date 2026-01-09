@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $tablet-width) {
         width: 290px;
         justify-content: space-between;
         z-index: 3;
@@ -101,29 +101,28 @@
     }
 }
 
-@media (max-width: $mobile-width) {
-    .header-nav--closed .header-nav__list {
-        display: none;
-    }
-
-    .header-nav--nojs .header-nav__toggle {
-        display: none;
-    }
-
-    .maheaderin-nav--nojs .header-nav__wrapper {
-        min-height: 0;
-    }
-
-    .header-nav--nojs .header-nav__list {
-        display: block;
-        position: relative;
-    }
-
-    .header-nav--nojs .header-nav__list-item {
-        display: block;
-        text-align: center;
-    }
+.header-nav--closed .header-nav__list {
+    display: none;
 }
+
+.header-nav--nojs .header-nav__toggle {
+    display: none;
+}
+
+.maheaderin-nav--nojs .header-nav__wrapper {
+    min-height: 0;
+}
+
+.header-nav--nojs .header-nav__list {
+    display: block;
+    position: relative;
+}
+
+.header-nav--nojs .header-nav__list-item {
+    display: block;
+    text-align: center;
+}
+
 
 .header-nav__wrapper {
     position: relative;
@@ -148,32 +147,11 @@
     padding: 0;
     list-style: none;
 
-    @media (max-width: $mobile-width) {
-        background-color: $basic-white;
-        width: 290px;
-        padding: 35px 25px;
-        align-items: flex-start;
-        position: absolute;
-        left: -151px;
-        top: 4px;
-    }
-
-    @media (min-width: $tablet-width) {
-        display: inline-flex;
-        align-items: center;
-        gap: 34px;
-        flex-direction: row;
-    }
-
-    @media (min-width: $desktop-width) {
-        display: inline-flex;
-        align-items: center;
-        gap: 35px;
-    }
-}
-
-@media (min-width: $tablet-width) {
-    .header-nav__toggle {
-        display: none;
-    }
+    background-color: $basic-white;
+    width: 290px;
+    padding: 35px 25px;
+    align-items: flex-start;
+    position: absolute;
+    left: -151px;
+    top: 4px;
 }
