@@ -2,7 +2,7 @@
     @include basic-fon;
 }
 
-.grant-wrapper {
+.grant__wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,7 @@
 
     @media (min-width: $tablet-width) {
         width: 768px;
+        padding: 100px 45px;
     }
 
     @media (min-width: $desktop-width) {
@@ -26,36 +27,55 @@
     }
 }
 
-.grant-title {
+.grant__container-title {
+    @media (min-width: $tablet-width) {
+        width: 498px;
+    }
+
+    @media (min-width: $desktop-width) {}
+}
+
+.grant__title {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     margin: 0 0 15px 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 34px;
+        line-height: 50px;
+        margin: 0 0 30px 0;
+    }
 }
 
-.grant-description {
+.grant__description {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     margin: 0 0 30px 0;
+
+    @media (min-width: $tablet-width) {
+        margin: 0 0 40px 0;
+        font-size: 16px;
+    }
 }
 
-.grant-conditions {
+.grant__conditions {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     margin: 40px 0 30px 0;
 }
 
-.grant-conditions-item {
+.grant__condition {
     padding: 25px 26px;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 15px;
     border-radius: 16px;
     border: 1px solid $basic-fon;
     position: relative;
 }
 
-.grant-conditions-item-number {
+.grant__condition-number {
     display: flex;
     width: 32px;
     height: 32px;
@@ -75,7 +95,9 @@
     left: -15px;
 }
 
-.grant-conditions-item-text {
+.grant__condition-text {
+    width: 216px;
+    display: block;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;

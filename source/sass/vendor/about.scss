@@ -2,7 +2,7 @@
     @include basic-fon;
 }
 
-.about-wrapper {
+.about__wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     }
 }
 
-.about-wrapper-title {
+.about__wrapper-title {
     @media (min-width: $desktop-width) {
         display: flex;
         justify-content: space-between;
@@ -31,7 +31,7 @@
     }
 }
 
-.about-container {
+.about__container {
     @media (min-width: $desktop-width) {
         display: flex;
         padding: 10px 0;
@@ -42,7 +42,7 @@
     }
 }
 
-.about-container2 {
+.about__container2 {
     @media (min-width: $desktop-width) {
         display: flex;
         padding: 10px 0;
@@ -53,7 +53,7 @@
     }
 }
 
-.about-title {
+.about__title {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -70,7 +70,7 @@
     }
 }
 
-.about-description {
+.about__description {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -87,7 +87,7 @@
     }
 }
 
-.about-title2 {
+.about__title2 {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -105,7 +105,7 @@
     }
 }
 
-.about-description2 {
+.about__description2 {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -122,7 +122,7 @@
     }
 }
 
-.about-button {
+.about__button {
     text-align: center;
     font-size: 12px;
     font-weight: 500;
@@ -148,19 +148,19 @@
     }
 }
 
-.about-button-span {
+.about__button-span {
     width: 22px;
     height: 22px;
     background-color: $basic-button;
     border-radius: 44px;
 }
 
-.about-button-span img {
+.about__button-span img {
     color: $basic-white;
     margin: 7px;
 }
 
-.about-programs {
+.about__programs {
     display: flex;
     padding: 20px 20px 20px 0;
     flex-direction: column;
@@ -181,7 +181,7 @@
     }
 }
 
-.about-programs-item {
+.about__programs-item {
     display: flex;
     padding: 16px 21px;
     flex-direction: column;
@@ -202,7 +202,7 @@
     }
 }
 
-.about-programs-item-star {
+.about__programs-icon {
     display: flex;
     width: 42px;
     height: 42px;
@@ -216,7 +216,7 @@
     border-radius: 30px;
 }
 
-.about-programs-item-span {
+.about__programs-span {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -236,7 +236,7 @@
     }
 }
 
-.about-programs-item-description {
+.about__programs-description {
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;

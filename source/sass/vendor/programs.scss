@@ -2,7 +2,7 @@
     @include basic-fon;
 }
 
-.programs-wrapper {
+.programs__wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
     }
 }
 
-.programs-button {
+.programs__button {
     text-align: center;
     font-size: 12px;
     font-weight: 500;
@@ -46,14 +46,14 @@
     }
 }
 
-.programs-button-span {
+.programs__button-span {
     width: 22px;
     height: 22px;
     background-color: #316DC2;
     border-radius: 44px;
 }
 
-.programs-button-span img {
+.programs__button-span img {
     color: #ffffff;
     margin: 7px;
 }

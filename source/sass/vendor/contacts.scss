@@ -2,7 +2,7 @@
     @include basic-fon;
 }
 
-.contacts-wrapper {
+.contacts__wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -25,18 +25,18 @@
     }
 }
 
-.contacts-heading {
+.contacts__title {
     margin: 0 0 10px 0;
 }
 
-.contacts-container {
+.contacts__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
 }
 
-.contacts-title {
+.contacts__info-item {
     color: $more-text;
     font-size: 12px;
     font-weight: 400;
@@ -47,13 +47,13 @@
 
 }
 
-.contacts-description {
+.contacts__info-value {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
 }
 
-.contacts-feature {
+.contacts__feature {
     height: 2px;
     align-self: stretch;
     border-top: 2px solid $basic-white;

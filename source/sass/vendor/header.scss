@@ -20,7 +20,7 @@
     }
 }
 
-.header-logo {
+.header__logo {
     display: flex;
     width: 52px;
     height: 52px;
@@ -33,7 +33,7 @@
 
 // ---------------------
 
-.header-nav__toggle {
+.header__nav-toggle {
     width: 136px;
     height: 54px;
     background-color: $basic-white;
@@ -53,7 +53,7 @@
     }
 }
 
-.header-nav--closed .header-nav__toggle::before {
+.header__nav--closed .header__nav-toggle::before {
     content: "";
     position: absolute;
     top: 19px;
@@ -66,14 +66,14 @@
         0 12px 0 0 #000000;
 }
 
-.header-nav--closed .header-nav__toggle:active::before {
+.header__nav--closed .header__nav-toggle:active::before {
     background-color: fade(#000000, 30%);
     box-shadow:
         0 6px 0 0 fade(#000000, 30%),
         0 12px 0 0 fade(#000000, 30%);
 }
 
-.header-nav--opened .header-nav__toggle {
+.header__nav--opened .header__nav-toggle {
 
     &::before,
     &::after {
@@ -101,30 +101,30 @@
     }
 }
 
-.header-nav--closed .header-nav__list {
+.header__nav--closed .header__nav-list {
     display: none;
 }
 
-.header-nav--nojs .header-nav__toggle {
+.header__nav--nojs .header__nav-toggle {
     display: none;
 }
 
-.maheaderin-nav--nojs .header-nav__wrapper {
+.header__nav--nojs .header__nav-wrapper {
     min-height: 0;
 }
 
-.header-nav--nojs .header-nav__list {
+.header__nav--nojs .header__nav-list {
     display: block;
     position: relative;
 }
 
-.header-nav--nojs .header-nav__list-item {
+.header__nav--nojs .header__nav-list-item {
     display: block;
     text-align: center;
 }
 
 
-.header-nav__wrapper {
+.header__nav-wrapper {
     position: relative;
 
     @media (min-width: $tablet-width) {
@@ -139,7 +139,7 @@
     }
 }
 
-.header-nav__list {
+.header__nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
