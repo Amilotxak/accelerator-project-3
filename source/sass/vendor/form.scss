@@ -1,113 +1,116 @@
 .form {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    background: url('../../img/background-form-mobile.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $basic-white;
-    background-color: $basic-fon;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: $basic-white;
+  background-color: $basic-fon;
 
-    @media (max-width: $mobile-width) {
-        width: 320px;
-        height: 753px;
-        padding: 40px 10px;
-        justify-content: flex-end;
-        align-items: center;
-        flex-shrink: 0;
-    }
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+  }
 
-    @media (min-width: $tablet-width) {
-        width: 768px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 
-    @media (min-width: $desktop-width) {
-        width: 1440px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.form__container {
+  background: url("../../img/background-form-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 10px;
+  margin: 40px 0;
 }
 
 .form-wrapper {
-    display: flex;
-    height: 670px;
-    padding: 15px;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
-    align-self: stretch;
-    border-radius: 16px;
-    background: $accent-fon;
+  display: flex;
+  height: 670px;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 16px;
+  background: $accent-fon;
 }
 
 .form-title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0 0 10px 0;
 }
 
 .form-description {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $more-text;
-    margin: 0 0 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $more-text;
+  margin: 0 0 20px 0;
 }
 
 .form-fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
 }
 
 .form-fieldset input {
-    background-color: $accent-fon;
-    border: none;
-    border-radius: 8px;
-    border: 1px solid $basic-white;
-    opacity: 0.3;
+  background-color: $accent-fon;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid $basic-white;
+  opacity: 0.3;
 }
 
 .form-fieldset textarea {
-    background-color: $accent-fon;
-    border-radius: 8px;
-    border: 1px solid $basic-white;
-    opacity: 0.3;
+  background-color: $accent-fon;
+  border-radius: 8px;
+  border: 1px solid $basic-white;
+  opacity: 0.3;
 }
 
 .form-fieldset label {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    color: $more-text;
-    opacity: 0.8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $more-text;
+  opacity: 0.8;
 }
 
 .form-fieldset select {
-    display: flex;
-    padding: 18px 21px 18px 96px;
-    align-items: center;
-    align-self: stretch;
+  display: flex;
+  padding: 18px 21px 18px 96px;
+  align-items: center;
+  align-self: stretch;
 
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .form-button {
-    display: flex;
-    width: 260px;
-    padding: 5px 5px 5px 31px;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 12px;
-    text-transform: uppercase;
-    color: #316DC2;
-    border-radius: 30px;
-    border: 1px solid #316DC2;
-    margin: 0 0 40px 0;
+  display: flex;
+  width: 260px;
+  padding: 5px 5px 5px 31px;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #316dc2;
+  border-radius: 30px;
+  border: 1px solid #316dc2;
+  margin: 0 0 40px 0;
 }
